@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation Exercise</title>
+<link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+<h2>Personal Information</h2>
+<form id="frm">
+<table>
+<tr><td>Enter name*:</td><td><input type="text" id="name"> <span class="err" id="e_name"></span></td></tr>
+<tr><td>Sex*:</td><td><label><input type="radio" name="sex" value="M"> Male</label> <label><input type="radio" name="sex" value="F"> Female</label> <span class="err" id="e_sex"></span></td></tr>
+<tr><td>Enter email address*:</td><td><input type="text" id="email"> <span class="err" id="e_email"></span></td></tr>
+<tr><td>Enter birthday (MM/DD/YYYY)*:</td><td><input type="text" id="bday"> <span class="err" id="e_bday"></span></td></tr>
+<tr><td>Enter street address (line 1)*:</td><td><input type="text" id="street"> <span class="err" id="e_street"></span></td></tr>
+<tr><td>Enter city*:</td><td><input type="text" id="city"> <span class="err" id="e_city"></span></td></tr>
+<tr><td>Select a region*:</td><td><select id="region"><option value="">-- chọn --</option><option>North</option><option>Central</option><option>South</option></select> <span class="err" id="e_region"></span></td></tr>
+<tr><td>Enter 5-digit ZIP code*:</td><td><input type="text" id="zip"> <span class="err" id="e_zip"></span></td></tr>
+<tr><td></td><td><input type="button" id="btnFinish" value="Finish"> <input type="button" id="btnClear" value="Clear"></td></tr>
+</table>
+</form>
+<script src="Scripts/jquery.min.js"></script>
+<script src="Scripts/script.js"></script>
+</body>
+</html>
